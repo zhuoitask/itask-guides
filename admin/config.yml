@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: your-github-username/itask-guides
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/static/uploads"
+
+collections:
+  - name: "guides-en"
+    label: "Guides (English)"
+    folder: "en"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "guides-zh"
+    label: "指南 (中文)"
+    folder: "zh"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "内容", name: "body", widget: "markdown" }
