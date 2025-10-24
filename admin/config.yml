@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: your-github-username/itask-guides
+  repo: zhuoitask/itask-guides
   branch: main
+  base_url: https://itaskbms.netlify.app
+  auth_endpoint: auth
 
 media_folder: "static/uploads"
 public_folder: "/static/uploads"
